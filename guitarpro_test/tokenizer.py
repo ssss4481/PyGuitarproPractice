@@ -7,7 +7,9 @@ class Specification_Checker:
         pass
 
     def not_Guitar_Track(self, track):
-        return False
+        if(track.channel.instrument >= 24 and track.channel.instrument <= 31):
+            return False
+        return True
         #track.channel.instrument        
 
     def not_Standard_Tuning_Track(self, track):
