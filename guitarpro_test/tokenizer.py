@@ -57,7 +57,7 @@ class Gpfile_Tokenizer:
         with open(f"{gpfile.split('.')[0]}.json", 'w') as jsonfile:
             json.dump(song, jsonfile)
                             
-
+#test code
 def main():
     Gpfile_Tokenizer().parse_to_json_format("Pokemon - Pokemon.gp4")
 
